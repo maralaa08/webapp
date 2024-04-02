@@ -1,0 +1,14 @@
+body {
+    display: block
+}
+.product-article {
+    background-image: url('./images/section_backgrounds/1.png');  
+    width: 100%; 
+    aspect-ratio: 2/1;
+    background-size: cover;
+}
+
+.product-article img {
+    width: 100%;
+    
+}
