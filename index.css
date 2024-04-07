@@ -1,11 +1,33 @@
 body {
-    display: block
+    display: block;
+    margin: 0;
 }
+
+article > h2 {
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
+}
+
 .product-article {
-    background-image: url('./images/section_backgrounds/1.png');  
     width: 100%; 
     aspect-ratio: 2/1;
     background-size: cover;
+}
+
+.product-article-1 {
+    background-image: url('./images/section_backgrounds/1.png');  
+}
+.product-article-2 {
+    background-image: url('./images/section_backgrounds/2.png');  
+}
+.product-article-3 {
+    background-image: url('./images/section_backgrounds/3.png');  
+}
+.product-article-4 {
+    background-image: url('./images/section_backgrounds/4.png');  
+}
+.product-article-5 {
+    background-image: url('./images/section_backgrounds/5.png');  
 }
 
 .product-article img {
