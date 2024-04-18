@@ -3,7 +3,8 @@ body {
     margin: 0;
 }
 
-article > h2 {
+
+* {
     margin-block-start: 0 !important;
     margin-block-end: 0 !important;
 }
@@ -34,6 +35,10 @@ article > h2 {
     width: 100%;
     
 }
+header{
+    display: flex;
+    justify-content: space-between;
+}
 
 header > nav > ul > li {
     float: left;
@@ -56,7 +61,66 @@ header > nav > ul > li > a {
     text-decoration: none;
 }
 
+.bg-gray{
+    background-color: #eeeeee;
+}
+
+.text-center {
+    text-align: center;
+
+}
 
 li a:hover {
     background-color: #dadaad;
+}
+
+.anim {
+    display: flex;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.logo {
+    width: 200px;
+}
+
+.ursah {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    animation: flowing 10s linear infinite;
+    transform: translateX(100%);
+    overflow: hidden;
+}
+@keyframes flowing {
+    100% {
+        transform: translateX(-100%);
+    }
+}
+main>article{
+    text-align-last: right;
+    align-content: end;
+    padding-bottom: 25px;
+}
+main>article>p,h2,a{
+    margin: 25px;
+    margin-bottom: 25px;
+}
+footer>nav>ul{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+footer>nav>ul>li{
+    list-style-type: none;
+    font-weight: bold;
+    
+}
+footer>nav>ul>li>ul>li{
+    list-style-type: none;
+}
+@media only screen and (max-width: 600px) {
+    header>nav {
+        display: none;
+    }
 }
