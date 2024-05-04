@@ -35,6 +35,13 @@ body {
     width: 100%;
     
 }
+.sags-article-1{
+    background-image: url('./images/sags1.png');
+}
+.sags-article-2{
+    background-image: url('./images/sags2.png');
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -105,6 +112,7 @@ main>article{
 main>article>p,h2,a{
     margin: 25px;
     margin-bottom: 25px;
+    text-decoration: none;
 }
 footer>nav>ul{
     display: flex;
@@ -123,4 +131,53 @@ footer>nav>ul>li>ul>li{
     header>nav {
         display: none;
     }
+}
+
+.flex {
+    display: flex;
+}
+
+.gap {
+    gap: 15px;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+}
+
+.card {
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    overflow: hidden;
+    padding-bottom: 8px;
+}
+
+.card>img {
+    width: 100%;
+    height: 160px;
+}
+
+.card>.sags {
+    background: transparent;
+    border: none;
+}
+.card>.name {
+    font-size: 18px;
+    font-weight: 700;
+}
+.price {
+    font-size: 18px;
+    font-weight: 700;
+}
+.priced {
+    font-size: 18px;
+    color: gray;
+    font-weight: 700;
+    text-decoration:line-through;
 }
