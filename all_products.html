@@ -10,6 +10,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./index.css" />
     <title>Web App</title>
+    <script src="all_products.js"></script>
 </head>
 
 <body>
@@ -47,60 +48,30 @@
     </nav>
 
 
-    <section>
+    <main>
         <nav>
             <button>View all </button>
             <h2>199 products</h2>
         </nav>
-        <div class=" flex gap">
-            <figure class="card">
-                <img src="./images/product.png" alt="Product 1" width="250" height="320">
-                <p class="name">Cleacing water</p>
-                <div class="flex gap">
-                    <p class="price">19900₮</p>
-                    <p class="priced">39900₮</p>
-                </div>
-                <button class="sags">Сагсанд хийх</button>
-            </figure>
-            <figure class="card">
-                <img src="./images/product.png" alt="Product 1" width="100">
-                <p class="name">Cleacing water</p>
-                <div class="flex gap">
-                    <p class="price">19900₮</p>
-                    <p class="priced">39900₮</p>
-                </div>
-                <button class="sags">Сагсанд хийх</button>
-            </figure>
-            <figure class="card">
-                <img src="./images/product.png" alt="Product 1" width="100">
-                <p class="name">Cleacing water</p>
-                <div class="flex gap">
-                    <p class="price">19900₮</p>
-                    <p class="priced">39900₮</p>
-                </div>
-                <button class="sags">Сагсанд хийх</button>
-            </figure>
-            <figure class="card">
-                <img src="./images/product.png" alt="Product 1" width="100">
-                <p class="name">Cleacing water</p>
-                <div class="flex gap">
-                    <p class="price">19900₮</p>
-                    <p class="priced">39900₮</p>
-                </div>
-                <button class="sags">Сагсанд хийх</button>
-            </figure>
-            <figure class="card">
-                <img src="./images/product.png" alt="Product 1" width="100">
-                <p class="name">Cleacing water</p>
-                <div class="flex gap">
-                    <p class="price">19900₮</p>
-                    <p class="priced">39900₮</p>
-                </div>
-                <button class="sags">Сагсанд хийх</button>
-            </figure>
-        </div>
+        <section id="products-container" class="flex gap">
+            <template id="product-template">
+            
+                <figure class="card">
+                    <img src="./images/product.png" alt="Product 1" width="100">
+                    <p class="name">Cleacing water</p>
+                    <div class="flex gap">
+                        <p class="price">19900₮</p>
+                        <p class="priced">39900₮</p>
+                    </div>
+                    <button class="sags">Сагсанд хийх</button>
+                </figure>
+            </template>
+        </section>
 
-    </section>
+
+
+    </main>
+
     <footer class="bg-gray">
         <nav>
             <ul>
@@ -136,4 +107,3 @@
 </body>
 
 </html>
-<script src="./all_products.js" type=""></script>
