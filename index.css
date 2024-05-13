@@ -149,6 +149,15 @@ a, a:visited, a:hover, a:active {
     color: inherit;
 }
 
+.margin-xl {
+    margin: 30px
+}
+.margin-sm {
+    margin: 10px
+}
+.margin-lg {
+    margin: 20px
+}
 .card {
     width: 300px;
     background-color: white;
@@ -165,7 +174,7 @@ a, a:visited, a:hover, a:active {
 
 .card>.sags {
     background: transparent;
-    border: none;
+    border: 1px solid;
 }
 .card>.name {
     font-size: 18px;

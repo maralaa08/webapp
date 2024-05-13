@@ -36,45 +36,70 @@
         <nav>
             <a href="profile.html" aria-label="User Profile"><img src="./images/User_box.png" alt="User" width="20"
                     class="social-img"></a>
-            <a href="search.html" aria-label="Search"><img src="./images/Search_alt_duotone_line.png" alt="Search" width="20"
+            <a href="search.html" aria-label="Search"><img src="./images/Search_alt_duotone_line.png" alt="Search"
+                    width="20" class="social-img"></a>
+            <a href="save.html" aria-label="Cart"><img src="./images/Bag.png" alt="Cart" width="20"
                     class="social-img"></a>
-            <a href="save.html" aria-label="Cart"><img src="./images/Bag.png" alt="Cart" width="20" class="social-img"></a>
         </nav>
     </header>
     <nav class="bg-gray">
         <h3 class="text-center">FREE SHOPPING ON ORDERS $30+</h3>
     </nav>
-        
-    
+
+
     <section>
         <nav>
             <button>View all </button>
             <h2>199 products</h2>
         </nav>
-        <figure>
-            <img src="./images/product.png" alt="Product 1">
-            <p>Cleacing water</p>
-            <p>zahialah</p>
-            <button>Сагсанд хйих</button>
-        </figure>
-        <figure>
-            <img src="./images/product.png" alt="Product 2">
-            <p>Cleacing water</p>
-            <p>zahialah</p>
-            <button>Сагсанд хйих</button>
-        </figure>
-        <figure>
-            <img src="./images/product.png" alt="Product 3">
-            <p>Cleacing water</p>
-            <p>zahialah</p>
-            <button>Сагсанд хйих</button>
-        </figure>
-        <figure>
-            <img src="./images/product.png" alt="Product 4">
-            <p>Cleacing water</p>
-            <p>zahialah</p>
-            <button>Сагсанд хйих</button>
-        </figure>
+        <div class=" flex gap">
+            <figure class="card">
+                <img src="./images/product.png" alt="Product 1" width="250" height="320">
+                <p class="name">Cleacing water</p>
+                <div class="flex gap">
+                    <p class="price">19900₮</p>
+                    <p class="priced">39900₮</p>
+                </div>
+                <button class="sags">Сагсанд хийх</button>
+            </figure>
+            <figure class="card">
+                <img src="./images/product.png" alt="Product 1" width="100">
+                <p class="name">Cleacing water</p>
+                <div class="flex gap">
+                    <p class="price">19900₮</p>
+                    <p class="priced">39900₮</p>
+                </div>
+                <button class="sags">Сагсанд хийх</button>
+            </figure>
+            <figure class="card">
+                <img src="./images/product.png" alt="Product 1" width="100">
+                <p class="name">Cleacing water</p>
+                <div class="flex gap">
+                    <p class="price">19900₮</p>
+                    <p class="priced">39900₮</p>
+                </div>
+                <button class="sags">Сагсанд хийх</button>
+            </figure>
+            <figure class="card">
+                <img src="./images/product.png" alt="Product 1" width="100">
+                <p class="name">Cleacing water</p>
+                <div class="flex gap">
+                    <p class="price">19900₮</p>
+                    <p class="priced">39900₮</p>
+                </div>
+                <button class="sags">Сагсанд хийх</button>
+            </figure>
+            <figure class="card">
+                <img src="./images/product.png" alt="Product 1" width="100">
+                <p class="name">Cleacing water</p>
+                <div class="flex gap">
+                    <p class="price">19900₮</p>
+                    <p class="priced">39900₮</p>
+                </div>
+                <button class="sags">Сагсанд хийх</button>
+            </figure>
+        </div>
+
     </section>
     <footer class="bg-gray">
         <nav>
@@ -109,4 +134,22 @@
 
     </footer>
 </body>
+
 </html>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch('./products.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("HTTP error " + response.status);
+                }
+                return response.json();
+            })
+            .then(json => {
+                this.users = json;
+            })
+            .catch(function () {
+                this.dataError = true;
+            })
+    });
+</script>
