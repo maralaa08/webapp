@@ -33,5 +33,12 @@
         "review": 4,
         "price": 39900,
         "currentPrice" : 19900
+    },
+    {
+        "title": "Cleansing water",
+        "image": "images/recommended.png",
+        "review": 4,
+        "price": 39900,
+        "currentPrice" : 19900
     }
 ]
