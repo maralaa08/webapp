@@ -10,13 +10,16 @@ class ProductCard extends HTMLElement {
         linkElem.setAttribute('href', 'index.css');
         shadowRoot.appendChild(linkElem);
     }
-
     connectedCallback() {
         const shadowRoot = this.shadowRoot;
         shadowRoot.querySelector('.name').textContent = this.getAttribute('title');
         shadowRoot.querySelector('img').src = this.getAttribute('image');
         shadowRoot.querySelector('.price').textContent = `${this.getAttribute('currentPrice')}₮`;
         shadowRoot.querySelector('.priced').textContent = `${this.getAttribute('price')}₮`;
+        shadowRoot.querySelector('.sags').dataset.id = `${this.getAttribute('id')}`;
+        shadowRoot.querySelector('.sags').addEventListener("click", () => {
+            console.log(`${this.getAttribute('id')}`);
+          })
     }
 }
 
@@ -32,6 +35,7 @@ fetch('./products.json')
             productCard.setAttribute('image', product.image);
             productCard.setAttribute('currentPrice', product.currentPrice);
             productCard.setAttribute('price', product.price);
+            productCard.setAttribute('id', product.id);
             productsContainer.appendChild(productCard);
         });
     })

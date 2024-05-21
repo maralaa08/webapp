@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "title": "Cleansing water",
         "image": "images/recommended.png",
         "review": 4,
@@ -7,6 +8,7 @@
         "currentPrice" : 19900
     },
     {
+        "id": 2,
         "title": "Cleansing water",
         "image": "images/product.png",
         "review": 4,
@@ -14,6 +16,7 @@
         "currentPrice" : 19900
     },
     {
+        "id": 3,
         "title": "Cleansing water",
         "image": "images/product.png",
         "review": 4,
@@ -21,6 +24,7 @@
         "currentPrice" : 19900
     },
     {
+        "id": 4,
         "title": "Cleansing water",
         "image": "images/recommended.png",
         "review": 4,
@@ -28,6 +32,7 @@
         "currentPrice" : 19900
     },
     {
+        "id": 5,
         "title": "Cleansing water",
         "image": "images/recommended.png",
         "review": 4,
@@ -35,11 +40,11 @@
         "currentPrice" : 19900
     },
     {
+        "id": 6,
         "title": "Cleansing water",
         "image": "images/recommended.png",
         "review": 4,
         "price": 39900,
         "currentPrice" : 19900
     }
-    
 ]

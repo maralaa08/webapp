@@ -72,6 +72,10 @@ header > nav > ul > li > a {
     background-color: #eeeeee;
 }
 
+.bg-red {
+    background-color: #ff0000;
+}
+
 .text-center {
     text-align: center;
 
@@ -136,8 +140,22 @@ footer>nav>ul>li>ul>li{
 .flex {
     display: flex;
 }
-.grid {
+/* .grid {
     display: grid;
+} */
+
+.grid-col-1 {
+    grid-column: 1;
+}
+
+.grid-col-2 {
+    grid-column: 2;
+}
+.grid-col-3 {
+    grid-column: 3;
+}
+.grid-col-3 {
+    grid-column: 3;
 }
 .gap {
     gap: 15px;
@@ -159,6 +177,16 @@ a, a:visited, a:hover, a:active {
 }
 .margin-lg {
     margin: 20px
+}
+
+.padding-xl {
+    padding: 15px
+}
+.padding-sm {
+    padding: 5px
+}
+.padding-lg {
+    padding: 10px
 }
 product-card {
     width: 300px;
@@ -192,3 +220,25 @@ product-card {
     font-weight: 700;
     text-decoration:line-through;
 }
+
+
+.grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 280px;
+    border: 1px solid #c1c1c1;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .badge {
+    position: relative;
+    left: 6px;
+    transform: translateX(-10px);
+    border: 1px solid black;
+    background: whitesmoke;
+    width: 14px;
+    height: 14px;
+  }
